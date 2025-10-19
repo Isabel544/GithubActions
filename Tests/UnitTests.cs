@@ -26,4 +26,10 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, "1"));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
+	public void Failing_Test()
+	{
+		Assert.AreEqual(3, Program.Subtract("1", "2"));
+		Assert.AreEqual(5, Program.Subtract("3", "2"));
+		Assert.AreEqual(12, Program.Subtract("5", "7"));
+	}
 }
