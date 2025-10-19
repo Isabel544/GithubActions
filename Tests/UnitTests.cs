@@ -28,7 +28,7 @@ public class Addition
 	}
 	public void Failing_Test()
 	{
-		Assert.AreEqual(3, Program.Subtract("1", "2"));
+		Assert.AreEqual(3, Program.Subtract(null, "2"));
 		Assert.AreEqual(5, Program.Subtract("3", "2"));
 		Assert.AreEqual(12, Program.Subtract("5", "7"));
 	}
